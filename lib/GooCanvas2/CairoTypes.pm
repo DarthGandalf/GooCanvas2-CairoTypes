@@ -2,7 +2,7 @@ use strict;
 use warnings;
 use Gtk3;
 package GooCanvas2::CairoTypes;
-our $VERSION = '0.01';
+our $VERSION = '0.001';
 require XSLoader;
 XSLoader::load();
 1;
@@ -36,7 +36,7 @@ There is an issue in the interaction between GooCanvas, GObject Introspection, C
 
 Currently this module only "fixes" C<Cairo::Pattern/GooCanvas2::CairoPattern> interop. For certain calls it just works if this module was included; for some other calls you need to explicitly convert the type.
 
-If you have any idea how to fix those cases to not require such call, or need to bridge more types, L<pull requests|> are welcome!
+If you have any idea how to fix those cases to not require such call, or need to bridge more types, L<pull requests|https://github.com/DarthGandalf/GooCanvas2-CairoTypes> are welcome!
 
 =head1 AUTHOR
 
